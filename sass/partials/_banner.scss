@@ -1,0 +1,70 @@
+@import '../partials/mixins';
+@import '../partials/variable';
+
+
+.banner {
+    background-image: url(../images/banner1.png);
+    @include bg;
+    padding: 320px 0px;
+    text-align: center;
+
+    h3 {
+        letter-spacing: 5px;
+        font-size: 30px;
+        line-height: 50px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        z-index: 6;
+        letter-spacing: 3px;
+        font-size: 69px;
+        line-height: 1.3;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        margin-bottom: 38px;
+    }
+
+    .buttons-wrapper {
+        a {
+            @include buttons;
+            margin-right: 17px;
+            background-color: #fff;
+
+            &:first-child {
+                background-color: $base-color;
+            }
+
+            &:hover {
+                background-color: $secondary-color;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    /* bottom: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: fit-content;
+    /* color: #fff; */
+    /* text-align: center; */
+    // /* opacity: 0.5;
+}

@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    margin: 0 auto;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s ease;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+ol,
+span,
+div,
+label {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h5 {
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

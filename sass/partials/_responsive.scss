@@ -1,0 +1,310 @@
+/*-------------Media Querries-----------------*/
+/*------------- 1366px -----------------*/
+@media only screen and (max-width:1366px) {
+    header .header-nav .header-toll a {
+        padding: 18px 0;
+    }
+
+    .interior-design .designer-content h2 {
+        font-size: 28px;
+    }
+
+}
+/*------------- 1199px -----------------*/
+@media only screen and (max-width:1199px) {
+    header .header-nav .header-toll {
+        display: none;
+    }
+
+    header .header-nav .ul-wrapper ul {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .section-our-team .ourTeam-slider-wrapper .ourTeam-slider .team-info {
+        width: auto;
+    }
+
+    .latest-news .latest-left h3 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .section-weDo .We-right .design-text h4 {
+        font-size: 17px;
+    }
+}
+/*------------- 991px -----------------*/
+@media only screen and (max-width:991px) {
+    .banner {
+        padding: 160px 0 130px;
+    }
+
+    .banner h1 {
+        letter-spacing: 1px;
+        font-size: 56px;
+    }
+
+    .banner h3 {
+        font-size: 25px;
+        line-height: 1.2;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    .clinet-reviews,
+    .latest-news,
+    .section-our-team,
+    .section-weDo {
+        padding: 60px 0;
+    }
+
+    .studio-section {
+        padding: 60px 0 0;
+    }
+
+    .plan-section {
+        padding: 60px 0 0;
+    }
+
+    .latest-projects {
+        padding: 60px 0 0;
+    }
+
+    .latest-projects .latest-wrapper ul.filter li {
+        padding: 0 20px;
+    }
+
+    .latest-news .latest-left {
+        margin-bottom: 40px;
+    }
+
+    footer .links-all {
+        max-width: 100%;
+        margin: 30px 0;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header .header-nav .ul-wrapper {
+        max-width: 250px;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        background: #333;
+        top: 0px;
+        right: -100%;
+        transition: all 0.6s ease-in-out;
+    }
+
+    header .header-nav .ul-wrapper.show {
+        right: 0;
+    }
+
+    header .header-nav .ul-wrapper ul {
+        padding: 10px 0;
+
+        li.active {
+
+            a {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    header .header-nav .header-toll.mob-tol {
+        display: block;
+        width: 100%;
+        padding: 35px 15px 25px;
+        background: #222;
+        z-index: 999;
+        text-align: left !important;
+
+        a {
+            color: #fff;
+            font-size: 13px;
+            font-weight: normal;
+            color: #fff;
+            padding-top: 0;
+            letter-spacing: 0;
+            text-align: left;
+            display: inline-block;
+        }
+    }
+
+    header .mobile-btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .mobile-x {
+        position: absolute;
+        top: 34px;
+        right: 20px;
+
+        i {
+            color: $base-color;
+            font-size: 20px;
+        }
+    }
+
+    header .header-nav .ul-wrapper ul li {
+        padding: 22px 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        a {
+            color: #fff;
+            font-weight: 300;
+            font-size: 13px;
+            padding: 0 15px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .studio-section .studio-img {
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    .about-banner {
+        padding: 100px 0 80px;
+    }
+
+    .interior-design {
+        height: auto;
+        padding: 66px 0;
+
+        .designer-content {
+
+            .creative-h2 {
+                position: static;
+            }
+        }
+    }
+
+    .service-design .services-content {
+        margin-bottom: 40px;
+    }
+    header .header-nav .ul-wrapper ul li a::before{
+        display: none;
+    }
+}
+/*------------- 641px -----------------*/
+@media only screen and (max-width:640px) {
+    .banner {
+        padding: 110px 0 95px;
+    }
+
+    .latest-projects .latest-wrapper ul.filter li {
+        padding: 0 5px;
+    }
+
+    .banner h1 {
+        font-size: 44px;
+    }
+
+    .interior-design .designer-content h2 {
+        font-size: 28px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+}
+/*------------- 480px -----------------*/
+@media only screen and (max-width:480px) {
+    h2 {
+        font-size: 24px !important;
+        line-height: 1.2 !important;
+        letter-spacing: 2px !important;
+    }
+
+    .section-weDo .We-right {
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .section-weDo .we-left .design-img {
+        width: 100%;
+        order: 1 !important;
+    }
+
+    .section-weDo .We-right .design-img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .latest-projects .latest-wrapper ul.filter {
+        flex-wrap: wrap;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .section-weDo .We-right .design-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .clinet-reviews .client-slider-wrapper .reviews-slider .client-details .client-img {
+        height: 56px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .section-weDo .We-right .design-text {
+        text-align: left !important;
+        padding-left: 0;
+    }
+
+    .banner h1 {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .banner h3 {
+        font-size: 17px;
+        line-height: 1.2;
+        color: #fff;
+        margin-bottom: 19px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px;
+    }
+
+    .banner {
+        padding: 85px 0 75px;
+    }
+
+    .banner .buttons-wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: 0 auto;
+
+        a {
+            width: 49%;
+            padding-left: 0;
+            padding-right: 0;
+            margin: 0;
+        }
+    }
+
+    .plan-section .plans-wrapper .plan-inner .plan-content {
+        padding: 0 0 0px 15px;
+    }
+}
+/*------------- 320px -----------------*/

@@ -1,0 +1,125 @@
+footer {
+    .footer-main {
+        padding: 51.5px 0;
+        background-color: $secondary-color;
+    }
+
+    .footer-logo {
+        margin-bottom: 44px
+    }
+
+    p {
+        @include para;
+        color: #999;
+
+        a {
+            color: #e5e5e5;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.6s ease 0s;
+
+            &:hover {
+                color: $base-color;
+            }
+        }
+    }
+
+    .footer-logo-content {
+        p {
+            max-width: 321px
+        }
+    }
+
+    .links-all {
+        max-width: 110px;
+        margin: 0 auto
+    }
+
+    .link-content {
+        h3 {
+            @include h4-text;
+            color: #e5e5e5;
+            margin-bottom: 28px;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .links-ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                position: relative;
+                width: 100%;
+                margin-bottom: 7px;
+
+                &:hover {
+                    &::after {
+                        background-color: $base-color;
+                    }
+
+                    a {
+                        color: $base-color;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background: rgba(255, 255, 255, 0.1);
+                    left: 0;
+                    top: 12px;
+                    transition: all 0.6s ease 0s;
+                }
+
+                a {
+                    color: #e5e5e5;
+                    font-size: 11px;
+                    font-family: 'Montserrat', sans-serif;
+                    padding-left: 15px;
+                    transition: all 0.6s ease 0s;
+                    text-transform: uppercase;
+
+                }
+            }
+        }
+
+        .footer-slider-wrapper {
+            p {
+                margin-top: 0;
+            }
+
+            .slick-prev,
+            .slick-next {
+                display: none !important;
+            }
+
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        color: #999;
+        background-color: #262626;
+        font-size: 13px;
+        padding: 8px 0;
+
+        p {
+            margin: 0;
+
+            a {
+                color: $base-color;
+                transition: all 0.6s ease 0s;
+
+                &:hover {
+                    color: #c5aa11;
+                }
+            }
+        }
+    }
+
+}

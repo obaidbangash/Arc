@@ -1,0 +1,106 @@
+@mixin h2-text {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@mixin h4-text {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+@mixin h3-text {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+@mixin buttons {
+    font-size: 12px;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    transition: all 0.6s ease 0s;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@mixin btn-hover {
+    background: #333;
+    color: #fff;
+}
+
+@mixin bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin mark {
+    background-color: $base-color;
+}
+
+@mixin para {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin svgs {
+    width: 100%;
+    max-width: 370px;
+    height: 1px;
+    margin: 40px auto;
+    display: block;
+    position: relative;
+    background: #e5e5e5;
+}
+
+@mixin svg-container {
+    width: 22px;
+    height: 15px;
+    overflow: visible !important;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -6px;
+    display: block;
+    position: absolute;
+}
+
+@mixin svg-icon {
+    fill: transparent;
+    stroke: $base-color;
+    stroke-width: 3;
+}
+
+@mixin h5-text {
+    font-size: 15px;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: #333;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+}

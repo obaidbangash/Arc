@@ -1,0 +1,807 @@
+
+.svg-wrapper {
+    @include svgs;
+
+    .svg-triangle-icon-container {
+        @include svg-container;
+
+        .svg-triangle-icon {
+            @include svg-icon
+        }
+    }
+}
+
+// section what we do starts here
+
+.section-weDo {
+    padding: 94px 0 120px 0;
+    text-align: center;
+
+    h2 {
+        @include h2-text;
+    }
+
+
+
+    .We-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 25px 0;
+
+        .design-img {
+            width: calc(50% - 15px);
+            margin-left: 15px;
+            border-radius: 3px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .design-text {
+            padding-right: 15px;
+            width: 50%;
+
+            h4 {
+                @include h4-text;
+            }
+
+            .mark {
+                @include mark
+            }
+        }
+
+        p {
+            margin: 0 0 10px;
+            @include para;
+            color: #666;
+            line-height: 25px;
+        }
+    }
+
+    .we-left {
+        .design-img {
+            margin-left: 0px;
+            margin-right: 15px;
+        }
+
+        .design-text {
+            padding-right: 0;
+            padding-left: 15px;
+        }
+    }
+}
+
+// section what we do ends here
+// section our team starts here
+.section-our-team {
+    text-align: center;
+    padding: 94px 0 0px;
+
+    h2 {
+        @include h2-text;
+    }
+
+    .ourTeam-slider-wrapper {
+        margin-bottom: 38px;
+        margin-top: 20px;
+
+        .ourTeam-slider {
+            width: 90%;
+            margin: 0 19px;
+            position: relative;
+
+
+
+            &:hover {
+                .team-info {
+
+                    &::after {
+                        opacity: .6;
+                        height: 7px;
+                        transform: translateY(10px)
+                    }
+                }
+
+                .team-info {
+                    transform: translateY(-15px);
+                }
+            }
+
+            .team-info {
+                width: 304px;
+                border: 3px solid $base-color;
+                margin: 0 auto;
+                margin-top: -21px;
+                z-index: 2;
+                position: relative;
+                background: #fff;
+                padding: 10px 0;
+                vertical-align: middle;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -moz-osx-font-smoothing: grayscale;
+                position: relative;
+                transition: all 0.6s ease 0s;
+
+                &::after {
+                    pointer-events: none;
+                    position: absolute;
+                    z-index: 1;
+                    content: "";
+                    top: 105%;
+                    left: 5%;
+                    width: 90%;
+                    opacity: 0;
+                    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 70%);
+                    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 70%);
+                    transition: all 0.6s ease 0s;
+                }
+
+                h5 {
+                    @include h5-text;
+                }
+
+                p {
+                    @include para;
+                    margin-top: 0;
+                }
+
+                .team-social {
+                    a {
+                        margin: 0 10px;
+                        display: inline-block;
+                        color: #555;
+                        transition: all 0.6s ease 0s;
+
+                        &:hover {
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+
+            .team-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        button {
+            display: none !important;
+        }
+    }
+
+}
+
+// section out team ends here
+
+// section interior design starts here
+.interior-design {
+    background-image: url(../images/our-design-bg.jpg);
+    @include bg;
+    padding: 166px 0 65px;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 418px;
+
+    .designer-content {
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            @include h2-text;
+            max-width: 720px;
+            text-align: center;
+            color: #111;
+            margin-top: 0;
+            font-weight: 300;
+            line-height: 48px;
+            margin: 0 auto;
+
+
+        }
+
+        .creative-h2 {
+            position: absolute;
+            right: 50px;
+            top: -43px;
+        }
+
+        .button-wrapper {
+            margin-top: 40px;
+
+            a {
+                @include buttons;
+                background-color: #fff;
+                width: 218px;
+
+                &:hover {
+                    @include btn-hover;
+                }
+            }
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($base-color, 0.9);
+    }
+}
+
+// section interior design ends here
+// section latest news starts here
+.latest-news {
+    padding: 94px 0 120px 0;
+    text-align: center;
+
+    h2 {
+        @include h2-text;
+    }
+
+    .latest-left {
+        text-align: left;
+
+        .latest-img {
+            position: relative;
+            margin-bottom: 25px;
+            border-radius: 3px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                transition: all 0.6s ease 0s;
+
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }
+            }
+
+            .date-card {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 15px;
+                background: #ebcd1e;
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                width: 50px;
+                font-size: 12px;
+                line-height: 1.4;
+
+                span {
+                    font-size: 24px;
+
+                }
+            }
+        }
+
+        h3 {
+            @include h3-text;
+            letter-spacing: 0;
+            font-weight: 400;
+            margin-bottom: 12px;
+            transition: all 0.6s ease 0s;
+            margin-top: 0;
+            letter-spacing: 0px;
+            font-size: 23px;
+        }
+
+        p {
+            color: #666;
+            margin: 0 0 10px;
+            @include para;
+        }
+
+    }
+
+    .button-wrapper {
+
+        a {
+            background-color: $base-color;
+            @include buttons;
+
+            &:hover {
+                @include btn-hover;
+            }
+        }
+    }
+
+}
+
+// section latest new ends here
+
+// section latest project starts here
+.latest-projects {
+    padding: 94px 0 0px 0;
+
+    h2 {
+        @include h2-text;
+    }
+
+    background: #f5f5f5;
+
+    .latest-img-wrapper {
+        // width: 25%;
+
+        // min-height: 365px;
+        .latest-img-main {
+            img {
+                width: 100%;
+                // height: 100%;
+            }
+        }
+    }
+
+    .latest-wrapper {
+        ul.filter {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 48px;
+            text-align: center;
+            justify-content: center;
+
+            li {
+                padding: 0 50px;
+            }
+
+            a {
+                display: inline-block;
+                padding: 0 5px;
+                display: inline-block;
+                position: relative;
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                z-index: 9;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+
+                &::after {
+                    content: "";
+                    width: 0px;
+                    background: rgba(235, 205, 30, 0.9);
+                    transition: all 0.6s ease 0s;
+                    position: absolute;
+                    left: 0;
+                    z-index: -1;
+                    top: 2px;
+                    height: 22px;
+
+                }
+
+                &:focus {
+                    width: 100%;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            a.active {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        .latest-title {
+            background-color: rgba($base-color, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 44px 0;
+            transition: all 0.6s ease 0s;
+            opacity: 0;
+            cursor: pointer;
+
+            &:hover {
+                h4 {
+                    top: 50%;
+                }
+            }
+
+            h4 {
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include h4-text;
+                text-transform: uppercase;
+                transition: all 0.6s ease 0s;
+            }
+
+            p {
+                @include para;
+                margin: 0 0 10px;
+                color: #666;
+            }
+
+            &:hover {
+                opacity: 0.9;
+
+            }
+
+        }
+    }
+
+    .view-all-projects {
+        padding: 82px 0;
+        background-image: url(../images/view-bg.jpg);
+        @include bg;
+        text-align: center;
+        position: relative;
+        top: -1px;
+        background-attachment: fixed;
+
+        &::after {
+            background-color: rgba($base-color, 0.9);
+            width: 100%;
+            left: 0;
+            top: 0;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+            content: '';
+        }
+
+        .button-wrapper {
+            z-index: 11;
+            position: relative;
+
+            a {
+                @include buttons;
+                color: #fff;
+                background-color: #333;
+
+                &:hover {
+                    @include btn-hover;
+                    color: #333;
+                    background-color: #fff;
+                }
+            }
+        }
+
+    }
+
+}
+
+// section latest project ends here
+// inner pages starts here
+// inner page about us banner/hero starts here
+.about-banner {
+    background-image: url(../images/about-bg.jpg);
+    @include bg;
+    padding: 209px 0 131px;
+
+    h2 {
+        @include h2-text;
+        color: #fff;
+        margin-top: 0;
+        font-weight: 300;
+    }
+
+    .about-ul {
+        margin-top: 25px;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        color: #ccc;
+        display: flex;
+        justify-content: center;
+
+        li {
+            position: relative;
+            text-transform: uppercase;
+
+            &::after {
+                content: "/\00a0";
+                padding: 0 5px;
+                color: #ccc;
+            }
+        }
+    }
+
+    li.active {
+        color: $base-color;
+        cursor: pointer;
+    }
+}
+
+// inner page about us banner/hero starts here
+// inner page design studio starts here
+.studio-section {
+    padding: 94px 0 0;
+
+    .studio-img {
+        padding-right: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .studio-right {
+        padding-left: 10px;
+
+        h2 {
+            @include h2-text;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        p {
+            margin: 0 0 10px;
+            font-family: 'Roboto', sans-serif;
+            @include para;
+
+            span {
+                font-weight: 700;
+                color: #666;
+            }
+        }
+
+    }
+}
+
+// inner page design studio ends here
+// section client revies starts here
+.index-viewer {
+    background-image: url(../images/client-bg.jpg);
+    @include bg;
+    background-attachment: fixed;
+    color: #fff;
+
+    p {
+        color: #ccc;
+    }
+}
+
+.clinet-reviews {
+    padding: 94px 0 75px;
+
+    h2 {
+        @include h2-text;
+    }
+
+    .client-slider-wrapper {
+        .slick-prev {
+            display: none !important;
+        }
+
+        .slick-next {
+            display: none !important;
+        }
+
+        .reviews-slider {
+            margin-bottom: 70px;
+            padding: 0 40px;
+            position: relative;
+
+            .reviews-content {
+                span {
+                    font-family: 'Droid Serif', serif;
+                    font-size: 60px;
+                    color: #ccc;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    line-height: 50px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p {
+                    @include para;
+                    margin-bottom: 45px;
+                    font-style: italic;
+                }
+            }
+
+            .client-details {
+                display: flex;
+
+                .client-img {
+                    border: 3px solid $base-color;
+                    margin-right: 25px;
+                    width: 56px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            span {
+                margin-bottom: 5px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 1.2;
+                font-weight: 400;
+                letter-spacing: 2px;
+                display: inline-block;
+            }
+
+            h6 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                line-height: 25px;
+                color: #666;
+                font-weight: 400;
+            }
+
+        }
+    }
+}
+
+// section client revies ends here
+// inner page service section services design
+.service-design {
+    padding: 94px 0 0 0;
+
+    .services-content {
+        margin-bottom: 78px;
+
+        .services-img {
+            margin-bottom: 30px;
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h4 {
+            @include h4-text;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            span {
+                background-color: $base-color;
+                letter-spacing: 2px;
+                padding: 0 3px;
+
+            }
+        }
+
+        p {
+            @include para;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 24px;
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            transition: all 0.6s ease 0s;
+            color: #333;
+
+            &:hover {
+                color: $base-color;
+            }
+        }
+    }
+}
+
+// inner page service section services design
+// section plans starts here
+.plan-section {
+    padding: 94px 0 30px;
+
+    h2 {
+        @include h2-text;
+    }
+
+    .plans-wrapper {
+        .plan-inner {
+            display: flex;
+            margin-bottom: 50px;
+
+            .plan-icon {
+                i {
+                    font-size: 24px;
+                    border: 1px solid #ccc;
+                    color: #333;
+                    width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    line-height: 60px;
+                    border-radius: 3px;
+                }
+            }
+
+            .plan-content {
+                padding: 0 30px;
+
+                h4 {
+                    @include h4-text;
+                    font-size: 24px;
+                    margin-top: 0;
+                    margin-bottom: 13px;
+                }
+
+                p {
+                    @include para;
+                }
+            }
+        }
+    }
+
+}
+
+#top-btn {
+    position: fixed;
+    text-align: center;
+    right: 30px;
+    bottom: 30px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    z-index: 10000;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.1s linear;
+
+    &:hover {
+        background-color: $base-color;
+        color: $secondary-color;
+    }
+}
+
+// section plans ends here
+
+#counter {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #fff;
+    z-index: 19991;
+    transition: all 0.6 ease-in-out;
+
+    .load-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .load-logo {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// inner pages ends here
